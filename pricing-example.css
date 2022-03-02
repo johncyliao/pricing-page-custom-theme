@@ -1,0 +1,135 @@
+#header {
+  text-transform: uppercase;
+}
+
+.nav-space {
+  flex-grow: 1;
+}
+/*
+.nav-items {
+  ;
+}*/
+
+.nav-item {
+  text-decoration: none;
+  color: greenyellow;
+}
+
+.nav-item:hover {
+  color: coral;
+  font-weight: bold;
+}
+
+#btn-login {
+  margin-left: 15px;
+}
+
+h5 {
+  color: rgba(234,84,19,0.8);;
+}
+
+#video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+form {
+  background-color: rgba(255,221,64,0.5);
+  padding: 20px 30px;
+  width: 60%;
+  font-size: 20px;
+  border-radius: 15px;
+  margin: 15px auto 5px auto;
+  text-align: center;
+}
+
+#exampleInputEmail1 {
+  max-width: 400px;
+  margin: auto;
+}
+
+.form-check {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+#exampleCheck1 {
+  margin-right: 10px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin: 30px 3em 0 3em;
+}
+
+.feature-icon {
+  margin: auto;
+}
+
+#timely-support-icon, #solid-quality-icon, #community-icon {
+  color: rgba(234,84,19,1);
+  font-size: 50px;
+}
+
+.plan-card-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  flex-grow: 1;
+  margin: 10px;
+}
+
+.card-space{
+  flex-grow: 1;
+}
+
+@media (max-width: 530px) {
+  #video {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  form {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 15px;
+    margin: 15px auto 5px auto;
+    text-align: center;
+  }
+  .features-container {
+    grid-template-columns: 5fr;
+    display: grid;
+    margin: 30px 0 0 0;
+    text-align: center;
+  }
+  .feature-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .plan-card-container {
+    flex-direction: column;
+  }
+}
+
+
+#footer-icon {
+  color: rgba(234,84,19,1);
+  font-size: 25px;
+}

@@ -1,0 +1,19 @@
+//custom variables (must come first)
+$primary: rgba(234,84,19,1);
+
+//import functions and variables
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+//add a custom theme color
+$custom-theme-colors :(
+    "alitlight": #f2ebfa,
+    "altdark": #522192
+);
+
+//merge the code into the orignal theme colors dictionary
+$theme-colors: map-merge($map1:theme-colors , $map2:custom-theme-colors );//order doesnt matter
+
+//import and include all of bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
